@@ -6,7 +6,7 @@
 /*   By: alakhani <alakhani@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/27 18:12:19 by alakhani          #+#    #+#             */
-/*   Updated: 2020/06/15 22:35:16 by alakhani         ###   ########.fr       */
+/*   Updated: 2020/06/15 23:26:05 by alakhani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void *ft_memset(void *buffer, int ch, size_t num)
 {
-	unsigned char *c;
+	unsigned char	*c;
 
 	c = buffer;
 
@@ -31,8 +31,8 @@ void ft_bzero(void *s, size_t n)
 
 void *ft_memcpy(void *destination, const void *source, size_t num)
 {
-	char *dest;
-	const char *src;
+	char 			*dest;
+	const char 		*src;
 	
 	dest = destination;
 	src  = source;
@@ -44,10 +44,10 @@ void *ft_memcpy(void *destination, const void *source, size_t num)
 
 void *ft_memccpy(void *destination, const void *source, int ch, size_t num)
 {
-	char *dest;
-	const char *src;
-	unsigned char c;
-	void *ptr;
+	char 			*dest;
+	const char 		*src;
+	unsigned char 	c;
+	void 			*ptr;
 
 	dest = destination;
 	src  = source;
@@ -69,7 +69,7 @@ void *ft_memccpy(void *destination, const void *source, int ch, size_t num)
 
 void *ft_memmove(void *destination, const void *source, size_t num)
 {
-	char *tmp[num];
+	char 			*tmp[num];
 
 	ft_memcpy(tmp, source, num);
 	return ft_memcpy(destination, tmp, num);
