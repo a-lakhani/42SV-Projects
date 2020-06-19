@@ -6,14 +6,16 @@
 /*   By: alakhani <alakhani@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/12 22:27:29 by alakhani          #+#    #+#             */
-/*   Updated: 2020/06/15 09:49:01 by alakhani         ###   ########.fr       */
+/*   Updated: 2020/06/18 23:39:03 by alakhani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>		// printf
 #include <stdlib.h>		// atoi
 #include <string.h>		// strcmp
-#include "mem/mem1.c"
+#include "libft.h"
+
+size_t ft_strtester(char * dest, const char * src, )
 
 int	main(int argc, char *argv[])
 {

@@ -6,11 +6,11 @@
 /*   By: alakhani <alakhani@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/27 18:12:19 by alakhani          #+#    #+#             */
-/*   Updated: 2020/06/16 21:45:32 by alakhani         ###   ########.fr       */
+/*   Updated: 2020/06/18 23:26:30 by alakhani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 void *ft_memset(void *buffer, int ch, size_t num)
 {
@@ -18,7 +18,7 @@ void *ft_memset(void *buffer, int ch, size_t num)
 
 	c = buffer;
 
-	while ( num-- )
+	while (num--)
 		*c++ = ch;
 	return buffer;
 }
@@ -30,11 +30,11 @@ void ft_bzero(void *s, size_t n)
 
 void *ft_memcpy(void *destination, const void *source, size_t num)
 {
-	char 			*dest;
-	const char 		*src;
-	
+	char			*dest;
+	const char		*src;
+
 	dest = destination;
-	src  = source;
+	src = source;
 
 	while (num--)
 		*dest++ = *src++;
@@ -45,11 +45,11 @@ void *ft_memccpy(void *destination, const void *source, int ch, size_t num)
 {
 	char 			*dest;
 	const char 		*src;
-	unsigned char 	c;
+	unsigned char	c;
 	void 			*ptr;
 
 	dest = destination;
-	src  = source;
+	src = source;
 	c = (unsigned char) ch;
 	ptr = NULL;
 
