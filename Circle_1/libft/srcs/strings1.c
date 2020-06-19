@@ -6,8 +6,20 @@
 /*   By: alakhani <alakhani@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/27 18:11:20 by alakhani          #+#    #+#             */
-/*   Updated: 2020/05/27 18:11:24 by alakhani         ###   ########.fr       */
+/*   Updated: 2020/06/18 20:44:30 by alakhani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../libft.h"
+
+size_t ft_strlen(const char *str)
+{
+	size_t i;
+
+	i = 0;
+	while(str[i])
+		i++;
+	return (i);
+}
 
 
