@@ -6,7 +6,7 @@
 /*   By: alakhani <alakhani@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/12 22:27:29 by alakhani          #+#    #+#             */
-/*   Updated: 2020/06/18 23:39:03 by alakhani         ###   ########.fr       */
+/*   Updated: 2020/06/19 20:01:59 by alakhani         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,20 @@
 #include <string.h>		// strcmp
 #include "libft.h"
 
-size_t ft_strtester(char * dest, const char * src, )
+
+typedef void *(*STRINGFUN)(char *dest, const char *src, size_t num);
+
+void ft_strFunTest(STRINGFUN fun, size_t num, char *ft_name)
+{
+	char dest[] = "Today is June 19th, 2020.";
+	const char src[] = "I have finished my coffee for today.";
+
+	printf("String1: %s\n", dest);
+	printf("String2: %s\n", src);
+	printf("Return value of %s(String1, String2, %zu): %zu\n", ft_name, num,
+			(size_t) fun(dest, src, num));
+	printf("String1: %s\n", dest);
+}
 
 int	main(int argc, char *argv[])
 {
